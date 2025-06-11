@@ -1,257 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>STUDIO TECNOLOGIA BR</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f9fbfd;
-      margin: 0; padding: 0;
-      color: #222;
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #004aad;
-      color: white;
-      padding: 18px 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 1.8rem;
-      letter-spacing: 0.06em;
-      display: flex;
-      align-items: baseline;
-      gap: 6px;
-    }
-    header h1 span {
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: #c3c8d9;
-      vertical-align: middle;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 6px 10px;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
-    }
-    nav a:hover {
-      background-color: #003080;
-    }
-    main {
-      max-width: 960px;
-      margin: 30px auto;
-      padding: 0 15px 60px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    section.service {
-      background: white;
-      box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
-      border-radius: 12px;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
-    section.service .images {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
-      flex: 1 1 200px;
-    }
-    section.service .images img {
-      max-height: 90px;
-      border-radius: 10px;
-      object-fit: contain;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      background: #f0f4ff;
-      padding: 8px;
-      transition: transform 0.3s ease;
-    }
-    section.service .images img:hover {
-      transform: scale(1.1);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    section.service .content {
-      flex: 2 1 320px;
-    }
-    section.service h2 {
-      color: #004aad;
-      margin-top: 0;
-      font-size: 1.6rem;
-    }
-    section.service p {
-      font-size: 1.1rem;
-      line-height: 1.5;
-      margin-top: 8px;
-    }
-    #contato {
-      background: white;
-      box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
-      border-radius: 12px;
-      padding: 20px;
-      max-width: 960px;
-      margin: 0 auto 40px;
-      text-align: center;
-    }
-    #contato h2 {
-      color: #004aad;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-    }
-    #contato p {
-      font-size: 1.2rem;
-      margin: 8px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-    }
-    #contato a {
-      color: #004aad;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    #contato a:hover {
-      text-decoration: underline;
-    }
-    #contato svg {
-      width: 24px;
-      height: 24px;
-      fill: #25d366;
-    }
-    footer {
-      background: #004aad;
-      color: white;
-      text-align: center;
-      padding: 22px 15px;
-      font-size: 1rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 18px;
-      align-items: center;
-    }
-    footer a {
-      color: #a8c6ff;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-weight: 600;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-    footer svg {
-      width: 20px;
-      height: 20px;
-      fill: #25d366; /* WhatsApp green */
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        gap: 6px;
-        align-items: center;
-      }
-      nav {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      section.service {
-        flex-direction: column;
-        text-align: center;
-      }
-      section.service .images {
-        justify-content: center;
-      }
-      section.service .content {
-        flex: unset;
-      }
-      #contato p {
-        flex-direction: column;
-        gap: 4px;
-      }
-      footer {
-        flex-direction: column;
-        gap: 10px;
-        font-size: 0.9rem;
-      }
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>STUDIO TECNOLOGIA BR</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0; padding: 0;
+    color: #333;
+  }
+  header {
+    background: #0057b7;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-weight: 700;
+  }
+  section {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 15px;
+  }
+  .service {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+  .service img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+  }
+  .service-content {
+    flex: 1;
+  }
+  .service-content h2 {
+    margin: 0 0 10px;
+    color: #0057b7;
+  }
+  .service-content p {
+    font-size: 1.1em;
+    line-height: 1.4;
+  }
+  .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  .icons img {
+    width: 40px;
+    height: 40px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #666;
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>STUDIO TECNOLOGIA <span>BR</span></h1>
-    <nav>
-      <a href="#seguidores">Seguidores</a>
-      <a href="#compra-venda">Compra e Venda</a>
-      <a href="#conversao">Conversão</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+<header>
+  <h1>STUDIO TECNOLOGIA BR</h1>
+  <p>15 anos em Brasília - Tecnologia que você confia</p>
+</header>
 
-  <main>
-    <section id="seguidores" class="service">
-      <div class="images" aria-label="Ícones redes sociais">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Ícone TikTok" />
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Ícone Instagram" />
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Ícone YouTube" />
+<section>
+  <div class="service">
+    <div class="service-content">
+      <h2>Venda de Seguidores para TikTok e Instagram</h2>
+      <p>Aumente sua presença digital com seguidores reais e engajados nas principais redes sociais.</p>
+      <div class="icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok" />
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram" />
       </div>
-      <div class="content">
-        <h2>Venda de Seguidores para TikTok, Instagram e YouTube</h2>
-        <p>Impulsione seu perfil com seguidores reais e engajados nas principais redes sociais.</p>
-      </div>
-    </section>
+    </div>
+  </div>
 
-    <section id="compra-venda" class="service">
-      <div class="images" aria-label="Fotos de eletrônicos">
-        <img src="https://images.unsplash.com/photo-1587620931225-c0b1b8f9d96d?auto=format&fit=crop&w=160&q=80" alt="TV moderna" />
-        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=160&q=80" alt="Celular moderno" />
-        <img src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?auto=format&fit=crop&w=160&q=80" alt="Notebook moderno" />
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=160&q=80" alt="Computador desktop" />
-      </div>
-      <div class="content">
-        <h2>Compra e Venda de Usados</h2>
-        <p>Compramos celulares, TVs, computadores e notebooks com procedência. Avaliação rápida e pagamento na hora.</p>
-      </div>
-    </section>
+  <div class="service">
+    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Compra de usados" />
+    <div class="service-content">
+      <h2>Compra de Celulares, TVs, Computadores e Notebooks Usados</h2>
+      <p>Recebemos seus aparelhos usados com procedência e oferecemos avaliação justa e pagamento rápido.</p>
+    </div>
+  </div>
 
-    <section id="conversao" class="service">
-      <div class="images" aria-label="Fotos de videocassete e fita VHS">
-        <img src="https://cdn-icons-png.flaticon.com/512/3113/3113446.png" alt="Videocassete" style="max-height:100px;" />
-        <img src="https://cdn-icons-png.flaticon.com/512/1871/1871884.png" alt="Fita VHS" style="max-height:100px;" />
-      </div>
-      <div class="content">
-        <h2>Conversão de Fitas VHS para Pen Drive ou DVD</h2>
-        <p>Preservamos suas memórias antigas com qualidade. Transforme fitas VHS em arquivos digitais ou DVDs.</p>
-      </div>
-    </section>
-  </main>
+  <div class="service">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/VHS-tape-icon.svg/1200px-VHS-tape-icon.svg.png" alt="Conversão de Fitas VHS para DVD" />
+    <div class="service-content">
+      <h2>Conversão de Fitas VHS para Pen Drive ou DVD</h2>
+      <p>Preserve suas memórias convertendo suas fitas VHS para formatos digitais com qualidade e segurança.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="contato">
-    <h2>Fale com a gente</h2>
-    <p>
-      <a href="https://wa.me/5561986415866" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339-3.9 279.1-24.1 221.3 5.5c-54.7 27.8-92.5 79.6-100.7 139.4-10.3 74.3 46.3 143.1 109.2 187.5 27.4 20.2 61.3 28.3 94.1 25.6 33.9-2.8 65-21 87.3-49.1 8.1-10.1 13.3-21.6 14.8-34.4 3.7-34.1-6.6-70.1-33.6-96.4zm-33.6 88.3c-6.5 17.3-18.6 30.4-33.6 38.4-12.2 6.2-26.3 9.6-39.4 9.6-22.7 0-44-14.2-55.3-36.6-12-23.7-8.7-51.7 8.7-72.1 8.8-10.7 21.7-16.5 35.2-16.5 14.8 0 27.5 7.4 36.7 20.3 5.5 7.3 7.7 16.3 6.4 25.3-1.2 8.8-5.8 16.3-13.4 21.6-5.4 4-12.2 6.2-19.1 6.1-5.1-.1-10-1.8-14.3-5-3.8-2.7-6.3-6.4-7.8-10.7-1.4-4-1.3-8.5.3-12.5 1.8-5.5 8.3-9.5 14.4-9.4 3.6.1 7.1 1.3 9.7 3.8 1.4 1.3 2.3 3 2.7 4.8.6 3.2-.3 6.5-2.6 8.7-1.7 1.5-3.9 2.2-6.1 1.9-1.9-.2-3.5-
+<footer>
+  &copy; 2025 STUDIO TECNOLOGIA BR - Todos os direitos reservados
+</footer>
+</body>
+</html>
