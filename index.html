@@ -1,112 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>STUDIO TECNOLOGIA BR</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fa;
-    margin: 0; padding: 0;
-    color: #333;
-  }
-  header {
-    background: #0057b7;
-    color: white;
-    padding: 20px 10px;
-    text-align: center;
-  }
-  h1 {
-    margin: 0;
-    font-weight: 700;
-  }
-  section {
-    max-width: 960px;
-    margin: 30px auto;
-    padding: 0 15px;
-  }
-  .service {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
-    padding: 20px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-  }
-  .service img {
-    width: 120px;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
-    object-fit: cover;
-  }
-  .service-content {
-    flex: 1;
-  }
-  .service-content h2 {
-    margin: 0 0 10px;
-    color: #0057b7;
-  }
-  .service-content p {
-    font-size: 1.1em;
-    line-height: 1.4;
-  }
-  .icons {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  .icons img {
-    width: 40px;
-    height: 40px;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9em;
-    color: #666;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>STUDIO TECNOLOGIA BR - Serviços</title>
+  <meta name="description" content="STUDIO TECNOLOGIA BR em Brasília - Venda de seguidores para TikTok e Instagram, Conversão de fitas VHS para pen drive ou DVD, Compra de usados com procedência." />
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f8fa;
+      color: #333;
+      line-height: 1.6;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    header h1 {
+      color: #0077cc;
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      color: #555;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 30px;
+      grid-template-columns: 1fr;
+    }
+    section.service {
+      background: #fff;
+      border-radius: 10px;
+      padding: 25px 30px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    section.service:hover {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+    section.service h2 {
+      color: #0077cc;
+      margin-bottom: 15px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #0077cc;
+      padding-bottom: 8px;
+      max-width: fit-content;
+    }
+    section.service p {
+      font-size: 1.1rem;
+      color: #444;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    /* Responsividade */
+    @media(min-width: 600px) {
+      main {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>STUDIO TECNOLOGIA BR</h1>
-  <p>15 anos em Brasília - Tecnologia que você confia</p>
-</header>
-
-<section>
-  <div class="service">
-    <div class="service-content">
-      <h2>Venda de Seguidores para TikTok e Instagram</h2>
-      <p>Aumente sua presença digital com seguidores reais e engajados nas principais redes sociais.</p>
-      <div class="icons">
-        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046123.png" alt="TikTok" />
-        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="Instagram" />
-      </div>
-    </div>
-  </div>
-
-  <div class="service">
-    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Compra de usados" />
-    <div class="service-content">
-      <h2>Compra de Celulares, TVs, Computadores e Notebooks Usados</h2>
-      <p>Recebemos seus aparelhos usados com procedência e oferecemos avaliação justa e pagamento rápido.</p>
-    </div>
-  </div>
-
-  <div class="service">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/VHS-tape-icon.svg/1200px-VHS-tape-icon.svg.png" alt="Conversão de Fitas VHS para DVD" />
-    <div class="service-content">
-      <h2>Conversão de Fitas VHS para Pen Drive ou DVD</h2>
-      <p>Preserve suas memórias convertendo suas fitas VHS para formatos digitais com qualidade e segurança.</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  &copy; 2025 STUDIO TECNOLOGIA BR - Todos os direitos reservados
-</footer>
+  <header>
+    <h1>STUDIO TECNOLOGIA BR</h1>
+    <p>15 anos em Brasília - Tecnologia, Confiança e Qualidade</p>
+  </header>
+  <main>
+    <section class="service" id="seguidores">
+      <h2>Venda de Seguidores</h2>
+      <p>Impulsione suas redes sociais! Venda de seguidores para TikTok e Instagram com garantia de qualidade para aumentar seu alcance e engajamento.</p>
+    </section>
+    <section class="service" id="conversao-vhs">
+      <h2>Conversão de Fitas VHS</h2>
+      <p>Transforme suas memórias em digital. Conversão de fitas VHS para pen drive ou DVD com atendimento rápido e em Brasília DF.</p>
+    </section>
+    <section class="service" id="compra-usados">
+      <h2>Compra de Usados</h2>
+      <p>Compramos celulares, TVs, computadores e notebooks usados com procedência e avaliação justa. Traga seu equipamento e receba uma oferta rápida.</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 STUDIO TECNOLOGIA BR - Contato WhatsApp: (61) 98641-5866
+  </footer>
 </body>
 </html>
